@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valor Aritimétco</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #sequência li {
+            margin: 8px 0 8px 0;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        #sequência {
+            width: 16%;
+        }
+
+        fieldset {
+            margin-top: 10px;
+        }
+
+        legend {
+            font-size: 12x;
+            font-weight: bold;
+            text-align: center;
+            color: green;
+        }
+       
+        #calculo {
+            width: 16%;
+        }
+    </style>
+
 </head>
 <body>
-    <script>
-        
-    </script>
+    <h1>Valores aritiméticos</h1>
+
+    
+    <fieldset id="sequência">
+        <legend>Sequência de procedência</legend>
+        <ol>
+            <li>()</li>
+            <li>**</li>
+            <li>/, *, %</li>
+            <li>+, -</li>
+        </ol>
+    </fieldset>
+    
+    <fieldset id="calculo">
+        <legend>Calculos</legend>
+        <script>
+            document.write('<br>12 + 4 ** 2 = ' + (112 +4 ** 2))
+            document.write('<br><br>20 % 2 + 5 ** 2 = ' + (20 % 2 + 5 ** 2))
+            document.write('<br><br>10 + 5 - 100 / 2 = ' + (10 + 5 - 100 / 2))
+            document.write('(10 + 5) - 100 * 2 = ' )
+        </script>
+    </fieldeset>
+
 </body>
 </html>
