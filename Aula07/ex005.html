@@ -2,24 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Iniciando os estido no DOM</title>
 </head>
 <body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <b>DOM</b> em JavaScript.</p>
     <script>
-        var a = 5 + 3
-        var b = a % 2
-        var c = 3 + b / 2
-        var d = a + c ** 2
-
-        document.write('<strong>Calculos:</strong><br> var a = 5 + 3<br> var b = a % 2<br> var c = 3 + b / 2<br> var d = a + c ** 2<br>')
-
-        document.write('<br><strong>Rusultado:</strong>')
-        document.write(`<br>A = ${a}`)
-        document.write(`<br>B = ${b}`)
-        document.write(`<br>C = ${c}`)
-        document.write(`<br>D = ${d}`)
-
-        document.write('<br><br>Obs.: <strong>Que os calculos de</strong> "B" <b>a</b> "D" <strong>segum uma ordem de precedência. Vamos pegar o calculo</strong> "C" <strong>para resolver. Se fosse pra fazer o calculo sem seguir essa ordem de procedência, o resultado seria</strong> "3 + B(0) / 2"<strong>, o resultado seria</strong> "1.5". <b>Porque</b> "3 + B(0) = 3" <b>e</b> "3 / 2 = 1.5", <strong>sem seguir a ordem, agora se aplicarmos o ardem de procedência o resultado seria outro, primeiro nos vamos dividir e depois somar.</strong> "B(0) / 2= 0" <b>em seguida somamos o valor</b> "0" <b>com o valor</b> "3"<b>.</b>')
+        window.document.write(window.document.title)
     </script>
 </body>
 </html>
