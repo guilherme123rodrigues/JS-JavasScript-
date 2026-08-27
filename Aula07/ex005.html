@@ -3,62 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Iniciando os estido no DOM</title>
-
-    <style>
-        tr .semana {
-            color: blue;
-        }
-    </style>
-
 </head>
 <body>
-    <h1>Iniciando estudos DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <b>DOM</b> em JavaScript.</p>
-
+    <header>
+        <h1 id="titulo">Iniciando estudos DOM</h1>
+    </header>
+    
     <div>
-        <table>
-            <thead>
-                <th>Dia d/ semana</td>
-                <th>Aberto</td>
-                <th>Fechado</td>
-            </thead>
-
-            <tr>
-                <td class="semana">Segunda</td>
-                <td>08:15hrs.</td>
-                <td>17:15hrs.</td>
-            </tr>
-
-            <tr>
-                <td class="semana">Terça</td>
-                <td>08:15hrs.</td>
-                <td>17:15hrs.</td>
-            </tr>
-
-            <tr>
-                <td class="semana">Quarta</td>
-                <td>08:15hrs</td>
-                <td>17:15hrs.</td>
-            </tr>
-
-            <tr>
-                <td class="semana">Quinta</td>
-                <td>08:15hrs.</td>
-                <td>17:15hrs.</td>
-            </tr>
-
-            <tr>
-                <td class="semana">Sexta</td>
-                <td>10:30hrs.</td>
-                <td>14:00hrs.</td>
-            </tr>
-        </table>
+        <nav id="menu">
+            <ul>
+                <li>Olá</li>
+                <li>Tudo</li>
+                <li>Bem</li>
+            </ul>
+        </nav>
     </div>
 
     <script>
-        let cabecalho = window.document.getElementsByTagName('thead')[0]
-        cabecalho.style.borderRadius = '10px'
+        let cabeçalho = window.document.getElementById('titulo')
+        cabeçalho.style.color = 'green'
+        cabeçalho.style.fontFamily = 'Arial'
+
+        const menuzinho = window.document.getElementById('menu')
+        menuzinho.style.backgroundColor = 'rgb(123, 232, 252)'
+        menuzinho.style.padding = '3px'
     </script>
+
 </body>
 </html>
