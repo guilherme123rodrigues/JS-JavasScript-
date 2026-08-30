@@ -10,7 +10,7 @@
             background-color: rgb(119, 128, 7);
             color: rgb(255, 253, 250);
             font-weight: bold;
-            font-size: 17px;
+            font-size: 15px;
             width: 200px;
             height: 200px;
             line-height: 200px;
@@ -20,28 +20,36 @@
 
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        Resolva:
+    <div id="area">
+        Formula: 
         10 * 19 / 4 ** 2
     </div>
 
     <script>
-        function clicar(){
 
-            let soma = 10 * 19 / 4 ** 4
+        let a = window.document.getElementById('area')
 
-            window.document.getElementById('area').style.backgroundColor = 'black';
-        
-            window.document.getElementById('area').innerHTML = `Resultado: <strong style="color: orange">${soma}</strong>`
-        };
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+        a.addEventListener('click', clicar);
 
         function entrar(){
-            window.document.getElementById('area').innerHTML = '<strong style="color: blue">Clique!</strong>'
+            a.innerHTML = '<b style="font-size: 14px">Clique para ver o resultado!</b>';
+            a.style.backgroundColor= 'green';
         };
 
         function sair(){
-            window.document.getElementById('area').innerHTML = 'Resolva: 10 * 19 / 4 ** 2'
-        }
+            a.innerText = 'Formula: 10 * 19 / 4 ** 2';
+            a.style.backgroundColor = 'rgb(119, 128, 7)';
+        };
+
+        function clicar(){
+            var valor = 10 * 19 / 4 ** 4;
+        
+            a.style.backgroundColor = 'black';
+            a.innerHTML = `Resultado: <strong style="color: orange">${valor}</strong>`
+        };
+
     </script>
 
 </body>
