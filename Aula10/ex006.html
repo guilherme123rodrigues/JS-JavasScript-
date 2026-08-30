@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            background-color: rgb(119, 128, 7);
+            color: rgb(255, 253, 250);
+            font-weight: bold;
+            font-size: 17px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        };
+    </style>
+
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Resolva:
+        10 * 19 / 4 ** 2
+    </div>
+
+    <script>
+        function clicar(){
+
+            let soma = 10 * 19 / 4 ** 4
+
+            window.document.getElementById('area').style.backgroundColor = 'black';
+        
+            window.document.getElementById('area').innerHTML = `Resultado: <strong style="color: orange">${soma}</strong>`
+        };
+
+        function entrar(){
+            window.document.getElementById('area').innerHTML = '<strong style="color: blue">Clique!</strong>'
+        };
+
+        function sair(){
+            window.document.getElementById('area').innerHTML = 'Resolva: 10 * 19 / 4 ** 2'
+        }
+    </script>
+
+</body>
+</html>
