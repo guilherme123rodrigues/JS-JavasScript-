@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+
+    <style>
+        body {
+            font-size: 18px;
+        }
+
+        #titulo {
+            text-align: center;
+        }
+
+        input {
+            width: 100PX;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        fieldset {
+            max-width: 350px;
+        }
+
+        #res {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <fieldset>
+
+        <h1 id="titulo">Somar Valores</h1>
+
+        <input type="number" name="txt1" id="txt1"> +
+        <input type="number" name="txt2" id="txt2">
+        <input type="button" value="Somar" onclick="s()">
+        
+        <p id="res">Resultado: </p>
+
+    </fieldset>
+
+    <script>
+        
+        function s(){
+            let n1 = window.document.getElementById('txt1')
+            let n2 = window.document.getElementById('txt2')
+            let resultado = window.document.getElementById('res')
+            let valor1 = Number(n1.value)
+            let valor2 = Number(n2.value)
+            let soma = valor1 + valor2
+
+            resultado.innerHTML = `Resultado: ${soma}`
+        };
+        
+    </script>
+
+</body>
+</html>
