@@ -3,61 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soma</title>
+    <title>Função</title>
 
     <style>
+
         body {
-            font-size: 18px;
+            font-size: 27px;
         }
 
-        #titulo {
+        #style_soma {
+            width: 344px;
+            height: 180px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            border-style: outset;
+            padding: 2px;
+        }
+
+        #style_legenda {
+            color: green;
+            font-weight: bold;
+            padding-top: 30px;
             text-align: center;
         }
 
         input {
-            width: 100PX;
-            height: 30px;
-            font-size: 16px;
+            margin-top: 15px;
+            width: 60px;
+            height: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
         }
 
-        fieldset {
-            max-width: 350px;
+        #resp {
+            margin-left: 0;
         }
 
-        #res {
-            margin-bottom: 0;
+        #Somar {
+            font-size: 13px;
+        }
+
+        #Limpar {
+            font-size: 13px;
         }
     </style>
 
 </head>
 <body>
 
-    <fieldset>
+    <div>
+        <fieldset  id="style_soma">
+            <legend id="style_legenda">
+                Calculadora
+            </legend>
 
-        <h1 id="titulo">Somar Valores</h1>
+            <input type="number" name="txtn1" id="txtn1"> +
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" id="Somar">
+            <input type="button" value="Limpar" id="Limpar">
 
-        <input type="number" name="txt1" id="txt1"> +
-        <input type="number" name="txt2" id="txt2">
-        <input type="button" value="Somar" onclick="s()">
-        
-        <p id="res">Resultado: </p>
+            <p id="resp">Resultado: </p>
 
-    </fieldset>
+        </fieldset>
+    </div>
+    
+    <main>
+        <script>
+            let somando = window.document.getElementById('Somar')
+            somando.addEventListener('click', somar)
 
-    <script>
-        
-        function s(){
-            let n1 = window.document.getElementById('txt1')
-            let n2 = window.document.getElementById('txt2')
-            let resultado = window.document.getElementById('res')
-            let valor1 = Number(n1.value)
-            let valor2 = Number(n2.value)
-            let soma = valor1 + valor2
+            let limpeza = window.document.getElementById('Limpar')
+            limpeza.addEventListener('click', limpar)
 
-            resultado.innerHTML = `Resultado: ${soma}`
-        };
-        
-    </script>
+            function somar(){
+                let n1 = window.document.getElementById('txtn1')
+                let n2 = window.document.getElementById('txtn2')
+                let resultado = window.document.getElementById('resp')
+                let valor1 = Number(n1.value)
+                let valor2 = Number(n2.value)
+                let somatoria = valor1 + valor2
+
+                resultado.innerHTML = `Resultado: ${somatoria.toFixed(2)}`
+
+            };
+
+            function limpar(){
+                let n1 = window.document.getElementById('txtn1')
+                let resultado = window.document.getElementById('resp')
+                n1 = 0
+                n2 = 0
+                resultado.innerHTML = 'Resultado: '
+            };
+
+        </script>
+    </main>
 
 </body>
 </html>
