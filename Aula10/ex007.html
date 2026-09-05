@@ -70,29 +70,27 @@
     
     <main>
         <script>
+
             let somando = window.document.getElementById('Somar')
             somando.addEventListener('click', somar)
 
             let limpeza = window.document.getElementById('Limpar')
             limpeza.addEventListener('click', limpar)
 
+            let resultado = window.document.getElementById('resp')
+
             function somar(){
                 let n1 = window.document.getElementById('txtn1')
                 let n2 = window.document.getElementById('txtn2')
-                let resultado = window.document.getElementById('resp')
                 let valor1 = Number(n1.value)
                 let valor2 = Number(n2.value)
                 let somatoria = valor1 + valor2
-
+    
                 resultado.innerHTML = `Resultado: ${somatoria.toFixed(2)}`
 
             };
 
             function limpar(){
-                let n1 = window.document.getElementById('txtn1')
-                let resultado = window.document.getElementById('resp')
-                n1 = 0
-                n2 = 0
                 resultado.innerHTML = 'Resultado: '
             };
 
