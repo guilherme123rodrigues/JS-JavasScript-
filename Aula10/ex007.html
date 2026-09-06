@@ -85,8 +85,9 @@
                 let valor1 = Number(n1.value)
                 let valor2 = Number(n2.value)
                 let somatoria = valor1 + valor2
+                let msg = somatoria >10 || somatoria === 10?"Aprovado":"Reprovado"
     
-                resultado.innerHTML = `Resultado: ${somatoria.toFixed(2)}`
+                resultado.innerHTML = `Resultado: ${somatoria.toFixed(2)} é ${msg}`
 
             };
 
@@ -95,6 +96,7 @@
             };
 
         </script>
+
     </main>
 
 </body>
