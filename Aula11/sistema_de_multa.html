@@ -56,6 +56,12 @@
             color: white
         }
 
+        #msg {
+            font-size: 15px;
+            color: rgb(0, 247, 0);
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
@@ -100,8 +106,23 @@
         let registro = window.document.querySelector('#registrar')
 
         registro.addEventListener('click', () => {
-                let =
-            })
+            let nome = window.document.querySelector('#nome')
+            let endereco = window.document.querySelector('#endereço')
+            let data = window.document.querySelector('#data')
+            let estado = window.document.querySelector('#estado')
+            let cep = window.document.querySelector('#cep')
+            let email = window.document.querySelector('#e-mail')
+            let msg = window.document.querySelector('#msg')
+
+            nome.value = ''
+            endereco.value = ''
+            data.value = ''
+            estado.value = ''
+            estado.value = ''
+            cep.value = ''
+            email.value = ''
+            msg.textContent = 'Registrado no sistema'
+        })
     </script>
 </body>
 </html>
