@@ -17,7 +17,7 @@
         fieldset {
             width: 100%;
             text-align: justify;
-            margin: 50%;
+            margin: 40% 50% 0 50%;
         }
 
         #titulo {
@@ -50,6 +50,12 @@
         #cep {
             width: 100px;
         }
+
+        #registrar {
+            background-color: green;
+            color: white
+        }
+
     </style>
 
 </head>
@@ -59,18 +65,43 @@
 
         <legend id="titulo">Sistama do Detran</legend>
 
-        Nome: <input type="text" name="nome" id="nome">
+        <label>
+            Nome: <input type="text" name="nome" id="nome" required>
+        </label>
 
-        Endereço: <input type="" name="endereço" id="endereço">
+        <label>
+            Endereço: <input type="" name="endereço" id="endereço" required>
+        </label>
 
-        Data: <input type="date" name="" id="">
+        <label>
+            Data: <input type="date" name="data" id="data" required>
+            </label>
+        
+        <label>
+            Estado: <input type="text" name="estado" 
+            id="estado" required>
+        </label>
 
-        Estado: <input type="text" name="estado" id="estado">
+        <label>
+            Cep: <input type="text" name="cep" id="cep" required>
+        </label>
 
-        Cep: <input type="text" name="cep" id="cep">
+        <label>
+            E-mail: <input type="email" name="e-mail" id="e-mail" required>
+        </label>
 
-        E-mail: <input type="email" name="e-mail" id="e-mail">
+        <input type="button" value="Registrar" id="registrar">
+
+        <p id="msg"></p>
 
     </fieldset>
+
+    <script>
+        let registro = window.document.querySelector('#registrar')
+
+        registro.addEventListener('click', () => {
+                let =
+            })
+    </script>
 </body>
 </html>
