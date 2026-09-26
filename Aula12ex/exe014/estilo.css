@@ -19,14 +19,22 @@ form {
 
 input {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #botao {
-    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 15px;
 }
 
 #msg {
     padding-bottom: 15px;
+    
+}
+
+img {
+    margin-left: 19%;
+    border-radius: 50%;
 }
 
 footer {
