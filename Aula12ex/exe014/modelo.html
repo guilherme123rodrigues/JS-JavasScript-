@@ -15,20 +15,20 @@
 
     <form>
         <label for="ano_nascimento">Ano de Nascimneto</label>
-        <input type="text" name="Ano_de_nascimento" id="ano_nascimento">
+        <input type="text" name="ano_de_nascimento" id="ano_nascimento">
 
         <label>
             Sexo:
-            <input type="radio" name="sexo1" id="sexo">Masculino
-            <input type="radio" name="sexo1" id="sexo">Feminino
+            <input type="radio" name="sexo" id="mas" checked>Masculino
+            <input type="radio" name="sexo" id="fem">Feminino
         </label>
         
         
         <input id="botao" type="button" value="Verificar" onclick="verificar()">
 
-        <p id="msg">Preencha os dados acima para o resultado!</p>
-
-        <img src="">
+        <div id="resultado">
+            <p id="msg">Preencha os dados acima para o resultado!<p>
+        </div>
 
     </form>
     
