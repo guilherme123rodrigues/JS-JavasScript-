@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercíco</title>
+    <title>Verificador de idade</title>
 
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 <body>
-    <header>
-        <h1></h1>
+    <header id="titulo">
+        <h1>Verificador de idade</h1>
     </header>
 
-    <form>
-        <label for="ano_nascimento">Ano de Nascimneto</label>
-        <input type="text" name="ano_de_nascimento" id="ano_nascimento">
+    <main>
+        <fieldset id="conteudo">
+            <label for="ano">Ano de nascimento</label>
+            <input type="number" name="fano" id="fano" placeholder="Digite aqui!">
 
-        <label>
-            Sexo:
-            <input type="radio" name="sexo" id="mas" checked>Masculino
-            <input type="radio" name="sexo" id="fem">Feminino
-        </label>
-        
-        
-        <input id="botao" type="button" value="Verificar" onclick="verificar()">
+            <label for="sexo" id="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="masc" checked> Masculino
+            <input type="radio" name="sexo" id="femi"> Feminino
 
-        <div id="resultado">
-            <p id="msg">Preencha os dados acima para o resultado!<p>
-        </div>
+            <input type="button" value="Verificar" id="botao" onclick="verificar()">
 
-    </form>
-    
+            <div id="resultado">
+                detectar gênero
+            </div>
+        </fieldset>
+
+    </main>
+
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; GuilhermeRodrigues</p>
     </footer>
 
     <script src="script.js"></script>
