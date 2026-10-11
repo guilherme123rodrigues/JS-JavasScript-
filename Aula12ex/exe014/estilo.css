@@ -4,7 +4,7 @@ body {
 }
 
 #titulo {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.63);
     color: white;
     width: 27%;
     text-align: center;
@@ -16,7 +16,7 @@ body {
     background-color: white;
     border-radius: 7px;
     box-shadow: 5px 5px 10px;
-    width: 30%;
+    width: 40%;
     margin: auto;
 }
 
@@ -27,13 +27,13 @@ main {
 
 #fano {
     text-align: center;
-    width: 100px;
+    width: 190px;
     font-size: 15px;
     font-weight: bold;
 }
 
 input {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #botao {
@@ -46,6 +46,10 @@ input {
 
 #botao:hover {
     color: green;
+}
+
+#resultado {
+    color: blue
 }
 
 footer {
