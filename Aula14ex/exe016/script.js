@@ -22,8 +22,8 @@ function confirmar() {
     } 
     
     if (inicio.value.length != 0 && fim.value.length != 0 && passo.value.length != 0) {
-        for (inicio.value; inicio.value <= fim.value; inicio.value += passo.value) {
-            msg.textContent += `${inicio.value} => `
+       for (i; i <= final; i += incremento) {
+          msg.textContent += `${i} => `
         }
     }
 }
