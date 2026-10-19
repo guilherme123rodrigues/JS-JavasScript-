@@ -10,7 +10,7 @@ function confirmar() {
         alert('[ERRO] campos não preenchidos.')
     } else if (inicio.value.length == 0) {
         msg.textContent = '[Início] não foi especificado, impossive contar!'
-    } else if (fim.value.length == 0) {
+    } else if (fim.value.length == 0 || fim.value == 0) {
         fim.value = 10
         if (passo.value.length == 0) {
             passo.value = 1
@@ -32,19 +32,19 @@ function confirmar() {
 
         if (i < final) {
             for (i; i <= final; i += incremento) {
-                if (i != final) {
-                    msg.innerHTML += `<b style="color: blue">${i}</b> 👉 `
-                } else {
+                if (i + incremento > final) {
                     msg.innerHTML += `<b style="color: blue">${i}</b> 🏁 `
+                } else {
+                    msg.innerHTML += `<b style="color: blue">${i}</b> 👉 `
 
                 }
             }
         } else if (i > final) {
             for (i; i >= final; i -= incremento) {
-                if (i != final) {
-                    msg.innerHTML += `<b style="color: blue">${i}</b> 👉 `
-                } else {
+                if (i - incremento < final ) {
                     msg.innerHTML += `<b style="color: blue">${i}</b> 🏁 `
+                } else {
+                    msg.innerHTML += `<b style="color: blue">${i}</b> 👉 `
                 }
             }
         }
