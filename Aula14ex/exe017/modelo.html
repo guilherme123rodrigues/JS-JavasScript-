@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,26 @@
     <link rel="stylesheet" href="estilo.css">
 
 </head>
+
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tábuada</h1>
     </header>
 
     <section>
         <div>
-            Testando...    
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero">
+            <input type="button" value="Gerar" onclick="clicar()">
         </div>
-        <section id="img">
-        </section>
-        <div>
-            Olá!
+
+        <div id="tabu">
+            <form>
+                <textarea name="tabe" id="tabe" cols="9" rows="10"></textarea>
+            </form>
         </div>
     </section>
-    
+
     <footer>
         <p>&copy; CursoemVideo</p>
     </footer>
@@ -31,4 +36,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
