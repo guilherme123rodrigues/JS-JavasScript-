@@ -14,3 +14,9 @@ function clicar() {
         }
     }
 }
+
+function selecionar() {
+    let tabuda = window.document.querySelector('#tabe')
+
+    tabuda.style.backgroundColor = 'blue'
+}
