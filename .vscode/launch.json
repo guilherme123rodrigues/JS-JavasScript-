@@ -13,6 +13,12 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\Aula14ex\\exe016\\script.js"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:5500/Aula14ex/exe016/modelo.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:5500/Aula14ex/exe016/modelo.html"
         }
     ]
 }
