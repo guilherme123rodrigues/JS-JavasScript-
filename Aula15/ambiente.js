@@ -1,3 +1,11 @@
-let num = [4, 8, 10, 0, 2]
-num.sort()
-console.log(`Nosso vetor é ${num}`)
+let num = [4, 8, 19, 0, 2] // Vetor
+console.log(`Nosso vetor é ${num.sort((a, b) => a - b)}`) // Ordem crescente
+console.log(`Nosso vetor é ${num.sort((a, b) => b - a)}`)// Ordeem decrescente
+console.log(`Quantidade de item no vetor ${num.length}`) // Vê a quantidade de item que tem no vetor
+
+num.unshift(100) // Coloca um valor no ínicio do vetor
+num.push(109) // Coloca um valor no final do vetor
+
+num[1] = 112 // Inserindo um valor em local especifico
+
+console.log(`${num}`)
