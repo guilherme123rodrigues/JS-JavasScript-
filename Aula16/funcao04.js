@@ -20,9 +20,6 @@ function fat(v) {
     return vetor
 }
 
+let resp = fat(9)
 
-let resp = fat(5)
-
-for (let num in resp) {
-    console.log(`${resp[num]}`)
-}
+console.log(resp.join(''))
