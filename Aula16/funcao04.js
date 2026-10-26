@@ -1,25 +1,16 @@
-function fat(v) {
+let resp = function (v) {
     let cont = v
-    let t = 0
-    let s = cont
-    vetor = []
+    let t = 1
+    let vetor = []
     for (cont; cont >= 1; cont--) {
-        v--
-        if (v >= 1) {
-            t = v * s
-            s = t
-        }
-
+        t *= cont
         if (cont == 1) {
             vetor.push(`${cont} = ${t}`)
         } else {
             vetor.push(`${cont} x `)
         }
-
     }
     return vetor
 }
 
-let resp = fat(9)
-
-console.log(resp.join(''))
+console.log(resp(5).join(''))
